@@ -38,15 +38,15 @@ namespace OOPVehicles
 
             if (vehicleType == "Car")
             {
-                vehicle = new Car( model, year, registrationNumber, int.Parse(specific));
+                vehicle = new Car(model, year, registrationNumber, int.Parse(specific));
             }
             else if (vehicleType == "Truck")
             {
-                vehicle = new Bus( model, year, registrationNumber, double.Parse(specific));
+                vehicle = new Bus(model, year, registrationNumber, double.Parse(specific));
             }
             else if (vehicleType == "Motorcycle")
             {
-                vehicle = new Motorcycle( model, year, registrationNumber, double.Parse(specific));
+                vehicle = new Motorcycle(model, year, registrationNumber, double.Parse(specific));
             }
 
             if (vehicle != null)
@@ -71,3 +71,4 @@ namespace OOPVehicles
             MessageBox.Show("Vehicle list saved.");
         }
     }
+}
